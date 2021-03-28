@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PUI-Homework 5</title>
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS Code -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="rolls.js"></script>
+
+  <!-- Your JS Code -->
+  <script src="main.js"></script>
+
+</head>
+<body onload="initDetail()">
+
+
+<!-- top navigation bar -->
+    <nav class="top-nav">
+      <div class="row">
+        <div class="first">
+          <ul>
+            <li>
+                <a href="index.html">
+                  <img class="img" src="img/logo.png" alt="logo image"> 
+                </a>
+              </li>
+              <a href=""><b> Order Online </b></a>
+            </li>
+            <li>
+              <a href="products.html"><b> Menu</b></a>
+            </li>
+            <li>
+              <a href=""><b> About </b></a>
+            </li>
+            <li>
+              <a href=""><b> Contact Us </b></a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="second">
+          <div id="top-right-grid">
+            <p> </p>
+            <img src="img/location.png" class="img" alt="location icon">
+            <p id="top-right-text"> <b> Find a store</b></p>
+            <img src="img/icons.png" class="icon-img" alt="icons image">
+
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <div id="detail">
+
+    </div>
+
+    <div class="row">
+            <!-- left column (product name and picture) -->
+        <div class="left" style="background-color: #EEE2D5;">
+            <h4 id="sub" class="detail_title" style="color: #9E867B;"></h4>
+            <h1 class="detail_title" style="font-size: 36px;"> <b> Cinnamon Roll </b></h1>
+            <img src="img/caramel.png" alt="caramel pecan flavored cinnamon roll" id="detail_img">
+            <br/><br/><br/><br/><br/><br/><br/>
+        </div>
+            <!-- right column (detailed product information) -->
+        <div class="review_right">
+            <p id="desc"></p>
+            <h4 id="price"></h4>
+            <div id="review">
+                <img src="img/ratings.png" alt="ratings" class="img">
+                <p id="number"> 683 reviews</p>
+            </div>
+            <br/>
+            <h4> <b> Ingredients </b></h4>
+            <div class="row">
+              <div class="first">
+                  <div class="icons">
+                    <img src="img/wheat flour.png" alt ="wheat flour" class="img">
+                    <p class="options"> Wheat Flour</p>
+                  </div>
+                  <div class="icons">
+                    <img src="img/milk.png" alt ="milk" class="img">
+                    <p class="options"> Milk</p>
+                  </div>
+              </div>
+
+
+              <div class="second">
+                <div class="icons">
+                  <img src="img/egg.png" alt ="eggs" class="img">
+                  <p class="options"> Eggs</p>
+                </div>
+                <div class="icons">
+                  <img src="img/cinnamon.png" alt ="cinnamon spice" class="img">
+                  <p class="options">Cinnamon Spice</p>
+                </div>
+              </div>
+
+
+            </div>
+
+            <br/> <br/> <br/>
+            <h4> <b> Choose a glazing option: </b></h4>
+            <br/>
+            <input type="radio" id="na" name="glazing" value="na">
+            <label for="na">
+              <div class="icons">
+                <img src="img/na.png" alt ="no glazing" class="img_radio">
+                <p class="options_radio"> No glazing</p>
+              </div>
+            </label>
+            <input type="radio" id="sugar" name="glazing" value="sugar">
+            <label for="sugar">
+              <div class="icons">
+                <img src="img/sugar.png" alt ="sugarmilk" class="img_radio">
+                <p class="options_radio"> Sugarmilk</p>
+            </div>
+            </label>
+            <input type="radio" id="vanilla" name="glazing" value="vanilla">
+            <label for="vanilla">
+              <div class="icons">
+                <img src="img/vanilla.png" alt ="vanilla milk" class="img_radio">
+                <p class="options_radio"> Vanilla milk</p>
+            </div>
+            </label>
+            <input type="radio" id="choco" name="glazing" value="choco">
+            <label for="choco">
+              <div class="icons">
+                <img src="img/chocolate.png" alt ="double chocolate" class="img_radio">
+                <p class="options_radio"> Double Chocolate</p>
+            </div>
+            </label>
+
+            <h4> <b> Quantity: </b></h4>
+            <div>
+              <select id="select">
+                <option value="1"> 1</option>
+                <option value="3"> 3</option>
+                <option value="6"> 6 </option>
+                <option value="12"> 12 </option>
+              </select>
+            </div>
+
+            <br/><br/><br/>
+            <button id="addToCart"> <b> Add to Cart </b></button>
+
+
+
+            <br><br><br><br>
+        </div>
+    </div>
+   
+
+    <!-- footer -->
+    <footer>
+      <nav class="footer-nav">
+        <div class="row">
+          <div class="first">
+            <ul>
+              <li>
+                <p> <b> Privacy </b> </p>
+              </li>
+              <li>
+                <p><b> Terms and conditions </b></p>
+              </li>
+              <li>
+                <p><b> Site Map</b></p>
+              </li>
+              <li>
+                <p><b> Careers </b></p>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="second">
+            <p id="reserved"> <b> @ 2021 Bun Bun Bakeshop. All rights reserved. </b></p>
+          </div>
+
+        </div>
+      </nav>
+    </footer>
+
+
+  </div>
+</body>
+</html>
