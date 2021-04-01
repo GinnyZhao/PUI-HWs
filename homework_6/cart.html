@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +20,7 @@
   <script src="main.js"></script>
 
 </head>
-<body onload="getQuantity()">
+<body>
 
 
 <!-- top navigation bar -->
@@ -30,11 +29,10 @@
         <div class="first">
           <ul>
             <li>
-              <a href="index.html">
-                <img class="img" src="img/logo.png" alt="logo image"> 
-              </a>
-            </li>
-            <li>
+                <a href="index.html">
+                  <img class="img" src="img/logo.png" alt="logo image"> 
+                </a>
+              </li>
               <a href=""><b> Order Online </b></a>
             </li>
             <li>
@@ -66,52 +64,41 @@
 
 
 
-    <!-- landing picture -->
-    <div class="row">
-      <div class="seven">
-        <img src="img/landing_page.png" class="img" alt="landing picture">
-      </div>
-      <div class="three">
-        <br/><br/><br/><br/><br/><br/><br/><br/>
-        <h3> We serve fresh everyday since 2000.  </h3>
-        <br/><br/><br/><br/><br/><br/><br/><br/>
-        <a href="products.html" style="cursor: pointer"> 
-          <button id="orderNow"> <b> Order Now </b></button>
-        </a>
-      </div>
-
+<!-- menu banner and options icons-->
+    <div id="cart">
+        <h1> <b> My cart </b></h1>
     </div>
-    <br/><br/><br/><br/><br/><br/><br/><br/>
+    <br> <br>
 
+    <div class = "checkout-row">
+      <div id="checkout-items">
+        <h3 id="empty"> <b>Your Cart is Empty</b></h3>
 
+      </div>
+      <div id="summary">
+        <h2> <b> Order Summary</b></h2>
+        <br>
+        <div class="checkout-row">
+          <div>
+            <p> Subtotal: </p>
+            <p> Tax: </p>
+            <p> Tip: </p>
+            <h2> Total: </h2>
+          </div>
 
-    <!-- Great taste in every bite section -->
-    <div id="pink_row">
-      <div class="left">
-        <img src="img/GTIEB.png" id="left_offset" alt="picture of pastry">
+          <div>
+            <p> $ 0</p>
+            <p> $ 0</p>
+            <p> $ 0</p>
+            <h2> $ 0.00 <h2>
+          </div>
+        </div>
+        <br> <br>
+        <button id="checkout"> <b> Checkout </b></button>
       </div>
 
-      <div class="right">
-        <h4 id="GTIEB"> <b> </b>Great Taste in every bite. </b></h4>
-        <p class="landing_text"> At Bun Bun Bakeshop, we bake with the best ingredients. Every slice, every bite, and every taste of what we do will be a celebration of fresh, just for you.</p>
-      </div>
-
+      <br> <br> <br> <br>
     </div>
-    <br/><br/><br/><br/><br/><br/>
-
-
-  <!-- Crafted with passion and love section -->
-    <div id="brown_row">
-      <div class="right">
-        <h4 id="CWPL" style="margin-left: 50px"> <b> </b>Crafted with passion and love. </b></h4>
-        <p class="landing_text" style="margin-left: 50px"> At Bun Bun Bakeshop, we make life sweet. Our bakers strive to provide the best pastries possible to delight your tastes.</p>
-      </div>
-      <div class="left">
-        <img src="img/CWPL.png" id="right_offset" alt="picture of a baker">
-      </div>
-    </div>
-
-    <br/><br/><br/><br/><br/><br/>
 
     <!-- footer -->
     <footer>

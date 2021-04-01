@@ -52,7 +52,10 @@
             <p> </p>
             <img src="img/location.png" class="img" alt="location icon">
             <p id="top-right-text"> <b> Find a store</b></p>
-            <img src="img/icons.png" class="icon-img" alt="icons image">
+            <a href="cart.html" id="cartRef">
+              <img src="img/icons.png" class="icon-img" alt="icons image">
+              <p class="num" id="quantity"> 0 </p>
+            </a>
 
           </div>
         </div>
@@ -112,29 +115,29 @@
             <br/> <br/> <br/>
             <h4> <b> Choose a glazing option: </b></h4>
             <br/>
-            <input type="radio" id="na" name="glazing" value="na">
-            <label for="na">
+            <input type="radio" id="na" name="glazing" value="no glazing" onchange="getGlazing(this.value)" checked>
+            <label for="no glazing">
               <div class="icons">
                 <img src="img/na.png" alt ="no glazing" class="img_radio">
                 <p class="options_radio"> No glazing</p>
               </div>
             </label>
-            <input type="radio" id="sugar" name="glazing" value="sugar">
-            <label for="sugar">
+            <input type="radio" id="sugar" name="glazing" value="Sugarmilk" onchange="getGlazing(this.value)">
+            <label for="Sugarmilk">
               <div class="icons">
                 <img src="img/sugar.png" alt ="sugarmilk" class="img_radio">
                 <p class="options_radio"> Sugarmilk</p>
             </div>
             </label>
-            <input type="radio" id="vanilla" name="glazing" value="vanilla">
-            <label for="vanilla">
+            <input type="radio" id="vanilla" name="glazing" value="Vanilla Milk" onchange="getGlazing(this.value)">
+            <label for="Vanilla Milk">
               <div class="icons">
                 <img src="img/vanilla.png" alt ="vanilla milk" class="img_radio">
                 <p class="options_radio"> Vanilla milk</p>
             </div>
             </label>
-            <input type="radio" id="choco" name="glazing" value="choco">
-            <label for="choco">
+            <input type="radio" id="choco" name="glazing" value="Double Chocolate" onchange="getGlazing(this.value)">
+            <label for="Double Chocolate">
               <div class="icons">
                 <img src="img/chocolate.png" alt ="double chocolate" class="img_radio">
                 <p class="options_radio"> Double Chocolate</p>
@@ -143,16 +146,17 @@
 
             <h4> <b> Quantity: </b></h4>
             <div>
-              <select id="select">
-                <option value="1"> 1</option>
-                <option value="3"> 3</option>
-                <option value="6"> 6 </option>
-                <option value="12"> 12 </option>
+              <select id="select" onchange="getNumber(this.value)">
+                <option value=1 checked> 1</option>
+                <option value=3> 3</option>
+                <option value=6> 6 </option>
+                <option value=12> 12 </option>
               </select>
             </div>
 
             <br/><br/><br/>
-            <button id="addToCart"> <b> Add to Cart </b></button>
+            <button id="addToCart" onclick="addToCart()"> <b> Add to Cart
+               </b></button>
 
 
 

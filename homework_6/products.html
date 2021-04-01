@@ -20,7 +20,7 @@
   <script src="main.js"></script>
 
 </head>
-<body>
+<body onload = "getQuantity()">
 
 
 <!-- top navigation bar -->
@@ -52,8 +52,10 @@
             <p> </p>
             <img src="img/location.png" class="img" alt="location icon">
             <p id="top-right-text"> <b> Find a store</b></p>
-            <img src="img/icons.png" class="icon-img" alt="icons image">
-
+            <a href="cart.html" id="cartRef">
+              <img src="img/icons.png" class="icon-img" alt="icons image">
+              <p class="num" id="quantity"> 0 </p>
+            </a>
           </div>
         </div>
 

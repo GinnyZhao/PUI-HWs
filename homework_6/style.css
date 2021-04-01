@@ -14,6 +14,9 @@ body{
     background-color: #E5C496;
 }
 
+#cartRef {
+    text-align: left;
+}
 #CWPL{
     font-size: 36px;
     color: #DD6363;
@@ -61,7 +64,7 @@ h3 {
 }
 
 .icon-img {
-    width: 30%;
+    width: 100%;
 }
 
 .left {
@@ -166,7 +169,7 @@ h3 {
 
 #top-right-grid {
     display: grid;
-    grid-template-columns: 42% 8% 30% 20%;
+    grid-template-columns: 42% 8% 20% 7% 20%;
     margin-top: 10px;
 }
 
@@ -312,3 +315,48 @@ label {
     margin-right: 5%;
 }
 
+/* cart page style */
+#cart {
+    background-color: #EEE2D5;
+    text-align: center;
+    font-weight: 700px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.checkout-row {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.num {
+    margin-top: 25px;
+    position: relative;
+    top: -70px;
+    left: 50px;
+}
+
+
+#checkout {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 20px;
+    background-color: #B09487;
+    color: white;
+    font-style: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+#summary {
+    border: 4px solid #EEE2D5;
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 150px;
+}
