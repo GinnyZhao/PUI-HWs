@@ -20,7 +20,7 @@
   <script src="main.js"></script>
 
 </head>
-<body>
+<body onload="drawcart()">
 
 
 <!-- top navigation bar -->
@@ -81,16 +81,14 @@
         <div class="checkout-row">
           <div>
             <p> Subtotal: </p>
-            <p> Tax: </p>
             <p> Tip: </p>
             <h2> Total: </h2>
           </div>
 
           <div>
-            <p> $ 0</p>
-            <p> $ 0</p>
-            <p> $ 0</p>
-            <h2> $ 0.00 <h2>
+            <p id="subtotal"> $ 0.00</p>
+            <p> $ 5.00</p>
+            <h2 id="sum"> $ 0.00 <h2>
           </div>
         </div>
         <br> <br>

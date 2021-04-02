@@ -337,6 +337,9 @@ label {
     left: 50px;
 }
 
+.cart_right {
+    margin-left: 50px;
+}
 
 #checkout {
     padding-top: 18px;
@@ -353,10 +356,34 @@ label {
     margin-left: 40px;
 }
 
+.left_pic {
+    width: 100%;
+}
+
+.newDiv{
+    margin-left: 60px;
+    margin-bottom: 60px;
+}
+
 #summary {
     border: 4px solid #EEE2D5;
     border-radius: 20px;
     padding: 30px;
     margin-left: 50px;
     margin-right: 150px;
+    height: 450px;
+}
+
+.contentDiv {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.edit {
+    display: inline;
+    color: #D17B02;
+}
+
+.modify {
+    display: inline;
 }
