@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PUI-Homework 5</title>
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS Code -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="rolls.js"></script>
+
+  <!-- Your JS Code -->
+  <script src="main.js"></script>
+
+</head>
+<body onload="drawcart()">
+
+
+<!-- top navigation bar -->
+    <nav class="top-nav">
+      <div class="row">
+        <div class="first">
+          <ul>
+            <li>
+                <a href="index.html">
+                  <img class="img" src="img/logo.png" alt="logo image"> 
+                </a>
+              </li>
+              <a href=""><b> Order Online </b></a>
+            </li>
+            <li>
+              <a href="products.html"><b> Menu</b></a>
+            </li>
+            <li>
+              <a href=""><b> About </b></a>
+            </li>
+            <li>
+              <a href=""><b> Contact Us </b></a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="second">
+          <div id="top-right-grid">
+            <p> </p>
+            <img src="img/location.png" class="img" alt="location icon">
+            <p id="top-right-text"> <b> Find a store</b></p>
+            <a href="cart.html" id="cartRef">
+              <img src="img/icons.png" class="icon-img" alt="icons image">
+              <p class="num" id="quantity"> 0 </p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+
+
+<!-- menu banner and options icons-->
+    <div id="cart">
+        <h1> <b> My cart </b></h1>
+    </div>
+    <br> <br>
+
+    <div class = "checkout-row">
+      <div id="checkout-items">
+        <h3 id="empty"> <b>Your Cart is Empty</b></h3>
+
+      </div>
+      <div id="summary">
+        <h2> <b> Order Summary</b></h2>
+        <br>
+        <div class="checkout-row">
+          <div>
+            <p> Subtotal: </p>
+            <p> Tip: </p>
+            <h2> Total: </h2>
+          </div>
+
+          <div>
+            <p id="subtotal"> $ 0.00</p>
+            <p> $ 5.00</p>
+            <h2 id="sum"> $ 0.00 <h2>
+          </div>
+        </div>
+        <br> <br>
+        <button id="checkout"> <b> Checkout </b></button>
+      </div>
+
+      <br> <br> <br> <br>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <nav class="footer-nav">
+        <div class="row">
+          <div class="first">
+            <ul>
+              <li>
+                <p> <b> Privacy </b> </p>
+              </li>
+              <li>
+                <p><b> Terms and conditions </b></p>
+              </li>
+              <li>
+                <p><b> Site Map</b></p>
+              </li>
+              <li>
+                <p><b> Careers </b></p>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="second">
+            <p id="reserved"> <b> @ 2021 Bun Bun Bakeshop. All rights reserved. </b></p>
+          </div>
+
+        </div>
+      </nav>
+    </footer>
+
+
+  </div>
+</body>
+</html>
